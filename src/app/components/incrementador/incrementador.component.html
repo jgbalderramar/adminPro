@@ -1,0 +1,10 @@
+<h4> {{ leyenda }}</h4>
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)"> <i class="fa fa-minus"></i> </button>
+  </span>
+  <input #txtProgress type="number" min="1" max="100" class="form-control" placeholder="Search for..." name="porcentaje" [(ngModel)]="porcentaje" (ngModelChange)="cambioInput($event)">
+  <span class="input-group-btn">
+    <button class="btn btn-primary" type="button" (click)="cambiarValor(+5)"> <i class="fa fa-plus"></i> </button>
+  </span>
+</div>

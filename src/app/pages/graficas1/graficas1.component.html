@@ -1,3 +1,102 @@
-<p>
-  graficas1 works!
-</p>
+<div>
+  <h2 class="text-center"> Grafico Dona </h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel paneldefault">
+        <div class="panel-heading">
+          <h3 class="panel-title"> {{ graficos.grafico1.leyenda }} </h3>
+        </div>
+        <div class="panel-body">
+          <app-grfico-dona [doughnutChartLabels]="graficos.grafico1.labels" [doughnutChartData]="graficos.grafico1.data"
+            [doughnutChartType]="graficos.grafico1.type">
+          </app-grfico-dona>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel paneldefault">
+        <div class="panel-heading">
+          <h3 class="panel-title"> {{ graficos.grafico2.leyenda }} </h3>
+        </div>
+        <div class="panel-body">
+          <app-grfico-dona [doughnutChartLabels]="graficos.grafico2.labels " [doughnutChartData]="graficos.grafico2.data "
+            [doughnutChartType]="graficos.grafico2.type ">
+          </app-grfico-dona>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel paneldefault">
+        <div class="panel-heading">
+          <h3 class="panel-title"> {{ graficos.grafico3.leyenda }} </h3>
+        </div>
+        <div class="panel-body">
+          <app-grfico-dona [doughnutChartLabels]=graficos.grafico3.labels [doughnutChartData]=graficos.grafico3.data
+            [doughnutChartType]=graficos.grafico3.type>
+          </app-grfico-dona>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel paneldefault">
+        <div class="panel-heading">
+          <h3 class="panel-title"> {{ graficos.grafico4.leyenda }} </h3>
+        </div>
+        <div class="panel-body">
+          <app-grfico-dona [doughnutChartLabels]="graficos.grafico4.labels" [doughnutChartData]="graficos.grafico4.data"
+            [doughnutChartType]="graficos.grafico4.type">
+          </app-grfico-dona>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<br>
+<div>
+  <h2 class="text-center"> Grafico </h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <app-grafico [data]="graficoPrincipal"></app-grafico>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <app-grafico [data]="graficos.grafico1"></app-grafico>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <app-grafico [data]="graficos.grafico2"></app-grafico>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <app-grafico [data]="graficos.grafico3"></app-grafico>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <app-grafico [data]="graficos.grafico4"></app-grafico>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
